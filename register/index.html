@@ -1,0 +1,28 @@
+
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+    <meta charset="UTF-8">
+    <title>Maratona reģistrācija</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Maratona reģistrācijas forma</h1>
+<form action="https://formsubmit.co/tavs.epasts@gmail.com" method="POST" enctype="multipart/form-data">
+  <input type="text" name="name" required placeholder="Vārds">
+  <input type="email" name="email" required placeholder="Epasts">
+  <input type="number" name="age" required placeholder="Vecums">
+  <select name="distance" required>
+    <option value="">Izvēlies distanci</option>
+    <option value="3km">3 km</option>
+    <option value="10km">10 km</option>
+    <option value="21km">21 km</option>
+  </select>
+  <input type="file" name="document" accept=".pdf,.jpg,.jpeg" required>
+  <button type="submit">Sūtīt</button>
+</form>
+
+    <p id="message"></p>
+    <script src="script.js"></script>
+</body>
+</html>
